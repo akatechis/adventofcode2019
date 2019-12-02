@@ -1,5 +1,5 @@
 
-fn fuel_for_mass (mass: &usize) -> usize {
+fn fuel_for_mass(mass: &usize) -> usize {
     let div = (mass / 3) as f64;
     let fuel = div.floor() - 2.0;
     if fuel < 0.0 {
@@ -9,7 +9,7 @@ fn fuel_for_mass (mass: &usize) -> usize {
     }
 }
 
-fn fuel_for_mass_and_fuel (mass: &usize) -> usize {
+fn fuel_for_mass_and_fuel(mass: &usize) -> usize {
     let mut total = 0;
     let mut fuel = fuel_for_mass(mass);
     loop {
@@ -45,7 +45,7 @@ fn part_2(data: &Vec<usize>) {
     println!("(pt2) Fuel needed = {}", total);
 }
 
-fn create_data () -> Vec<usize> {
+fn create_data() -> Vec<usize> {
     vec![
         139616,
         148675,
